@@ -105,21 +105,21 @@ function finishChat() {
 
 //if they don't click the whatapp automatic data login
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwbgiE1aa3Kxc_bIaPVJvMzhMoXjVWj50OZG9YZjUeYjr-T44VGZgCmkouQAfFD07KiUQ/exec"; // Replace with your new Web App URL
+// const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwbgiE1aa3Kxc_bIaPVJvMzhMoXjVWj50OZG9YZjUeYjr-T44VGZgCmkouQAfFD07KiUQ/exec"; // Replace with your new Web App URL
 
-function saveToSheet(data) {
-  fetch(WEB_APP_URL, {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(response => response.json())
-  .then(result => console.log('Data saved:', result))
-  .catch(error => console.error('Error saving data:', error));
-}
-saveToSheet(userData);
+// function saveToSheet(data) {
+//   fetch(WEB_APP_URL, {
+//     method: 'POST',
+//     body: JSON.stringify(data),
+//     headers: {
+//       'Content-Type': 'application/json'
+//     }
+//   })
+//   .then(response => response.json())
+//   .then(result => console.log('Data saved:', result))
+//   .catch(error => console.error('Error saving data:', error));
+// }
+// saveToSheet(userData);
 
 
 // book an appointment 
@@ -156,7 +156,7 @@ const whatsappBtn = document.getElementById('whatsappBtn');
       lightbox.style.display = "block";
       lightboxImg.src = img.src;
     });
-  });
+  }); 
 
   close.addEventListener("click", () => {
     lightbox.style.display = "none";
