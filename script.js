@@ -105,6 +105,7 @@ function finishChat() {
 
 //if they don't click the whatapp automatic data login
 
+<<<<<<< HEAD
 // const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwbgiE1aa3Kxc_bIaPVJvMzhMoXjVWj50OZG9YZjUeYjr-T44VGZgCmkouQAfFD07KiUQ/exec"; // Replace with your new Web App URL
 
 // function saveToSheet(data) {
@@ -120,6 +121,23 @@ function finishChat() {
 //   .catch(error => console.error('Error saving data:', error));
 // }
 // saveToSheet(userData);
+=======
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwbgiE1aa3Kxc_bIaPVJvMzhMoXjVWj50OZG9YZjUeYjr-T44VGZgCmkouQAfFD07KiUQ/exec"; // Replace with your new Web App URL
+
+function saveToSheet(data) {
+  fetch(WEB_APP_URL, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(result => console.log('Data saved:', result))
+  .catch(error => console.error('Error saving data:', error));
+}
+saveToSheet(userData);
+>>>>>>> b6b15d6054c134b0da65a4930263888df664f8ef
 
 
 // book an appointment 
@@ -156,7 +174,11 @@ const whatsappBtn = document.getElementById('whatsappBtn');
       lightbox.style.display = "block";
       lightboxImg.src = img.src;
     });
+<<<<<<< HEAD
   }); 
+=======
+  });
+>>>>>>> b6b15d6054c134b0da65a4930263888df664f8ef
 
   close.addEventListener("click", () => {
     lightbox.style.display = "none";
