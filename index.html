@@ -517,29 +517,29 @@
 
         <!-- Gallery  -->
 <section id="gallery" class="gallery-section">
-<div class="section">
-  <i class="fa-solid fa-screwdriver"></i>
-  <div class="subheading">Our Work Gallery</div>
-  <div class="heading">A Glimpse of Our Successful Installations and Services</div>
-
-    <div class="gallery-container">
-    <div class="gallery-item"><img src="Need/gallery1.jpeg" alt="Gallery 1"></div>
-    <div class="gallery-item"><img src="Need/gallery2.jpeg" alt="Gallery 2"></div>
-    <div class="gallery-item"><img src="Need/gallery3.jpeg" alt="Gallery 3"></div>
-    <div class="gallery-item"><img src="Need/gallery4.jpg" alt="Gallery 4"></div>
-    <div class="gallery-item"><img src="Need/gallery5.jpg" alt="Gallery 5"></div>
-    <div class="gallery-item"><img src="Need/gallery6.png" alt="Gallery 6"></div>
-    <div class="gallery-item"><img src="Need/gallery7.png" alt="Gallery 7"></div>
-
+  <div class="section">
+    <i class="fa-solid fa-screwdriver"></i>
+    <div class="subheading">Our Work Gallery</div>
+    <div class="heading">A Glimpse of Our Successful Installations and Services</div>
+    <div class="carouselgallery">
+      <button class="carouselgallery-arrow left" aria-label="Previous">&#10094;</button>
+      <div class="carouselgallery-image-wrapper">
+        <img id="mainGalleryImg" src="Need/gallery1.jpeg" alt="Gallery 1" class="active">
+        <div class="click-to-view">Click to View</div>
+      </div>
+      <button class="carouselgallery-arrow right" aria-label="Next">&#10095;</button>
+    </div>
+    <div class="carouselgallery-indicators"></div>
+    <!-- Modal Lightbox -->
+    <div class="modal" id="modal-gallery">
+      <span class="close-modal">&times;</span>
+      <button class="modal-arrow modal-arrow-left">&#10094;</button>
+      <img class="modal-img" id="modal-img" alt="Gallery Modal Image">
+      <button class="modal-arrow modal-arrow-right">&#10095;</button>
+    </div>
   </div>
-
-  <!-- Lightbox popup -->
-  <div class="lightbox" id="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-  </div>
-</div>
 </section>
+
 
 
 <!-- 💛 Book an Appointment (with Map) -->
