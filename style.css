@@ -275,15 +275,12 @@ body {
   .carousel-item {
     height: 65vh;
   }
-<<<<<<< HEAD
   .carousel-caption {
     top: 55% !important;
     margin-left: 150px !important;
     transform: translate(-50%, -50%) !important;
     background: rgba(0, 0, 0, 0.55);
   }
-=======
->>>>>>> b6b15d6054c134b0da65a4930263888df664f8ef
   .carousel-caption h2 {
     font-size: 1.2rem;
   }
