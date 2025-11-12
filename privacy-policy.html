@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - VJM Multi Brand Services</title>
   <meta name="description" content="Privacy Policy for VJM Multi Brand Services. Learn how we collect and protect customer information.">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Optional: link to your main style -->
+  <link rel="stylesheet" href="style.css">
+
   <style>
     body {
       font-family: "Poppins", Arial, sans-serif;
@@ -14,20 +21,53 @@
       background: #fafafa;
       color: #222;
     }
+
     header {
       background: #1b1b1b;
       color: #fff;
-      text-align: center;
-      padding: 1.2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
     }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.1rem;
+    }
+
+    header a:hover {
+      color: #00bfff;
+    }
+
     .container {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
+
     h1, h2 {
       color: #111;
     }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
     footer {
       background: #1b1b1b;
       color: #ccc;
@@ -35,13 +75,39 @@
       padding: 1rem;
       margin-top: 60px;
       font-size: 0.9rem;
+      line-height: 1.6;
     }
-    a { color: #0073e6; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
+    footer a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+
+      .container {
+        margin: 20px;
+        padding: 15px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
+    <!-- Home icon with correct link -->
+    <a href="https://www.vjmservice.in/#home"><i class="fa-solid fa-house"></i> Home</a>
     <h1>Privacy Policy</h1>
   </header>
 
@@ -50,7 +116,7 @@
     <p>VJM Multi Brand Services (“we”, “our”, or “us”) values your privacy and is committed to protecting the personal information of our customers. This policy explains how we collect, use, and safeguard your data.</p>
 
     <h2>1. Information We Collect</h2>
-    <p>We collect limited details such as name, phone number, address, and service-related information. We do not collect payment details via our website or phone.</p>
+    <p>We collect limited details such as name, phone number, address, and service-related information. We do not collect or store payment details on our website or via phone.</p>
 
     <h2>2. How We Use Your Information</h2>
     <ul>
@@ -60,18 +126,21 @@
     </ul>
 
     <h2>3. Data Protection</h2>
-    <p>All data is stored securely and deleted once your service is completed unless needed for billing or warranty records.</p>
+    <p>All collected information is securely stored and only used for legitimate business purposes. We take reasonable measures to prevent unauthorized access, disclosure, or misuse.</p>
 
     <h2>4. Communication</h2>
-    <p>We may contact you via call, SMS, or WhatsApp for appointment confirmations, updates, or feedback.</p>
+    <p>We may contact you via call, SMS, or WhatsApp for appointment confirmations, service updates, or feedback.</p>
 
-    <h2>5. Cookies and Website Analytics</h2>
-    <p>Our site may use basic cookies for traffic analytics. These do not collect personal information and can be disabled via browser settings.</p>
+    <h2>5. Cookies and Analytics</h2>
+    <p>Our website may use cookies and analytics tools to improve user experience. You can disable cookies in your browser settings at any time.</p>
 
     <h2>6. Consent</h2>
-    <p>By contacting us through our website or phone, you consent to our collection and use of your data as described here.</p>
+    <p>By using our website or contacting us for services, you consent to the collection and use of your information in accordance with this policy.</p>
 
-    <h2>7. Contact Us</h2>
+    <h2>7. Updates to This Policy</h2>
+    <p>We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated revision date.</p>
+
+    <h2>8. Contact Us</h2>
     <p>
       📧 <strong>Email:</strong> vjmserviceandsolarsale@gmail.com<br>
       📞 <strong>Phone:</strong> 063808 86238<br>
@@ -80,7 +149,8 @@
   </div>
 
   <footer>
-    &copy; 2025 VJM Multi Brand Services | <a href="/privacy-policy.html">Privacy Policy</a>
+    © 2025 <strong>VJM Multi Brand Services</strong>. All Rights Reserved |<br>
+    Designed & Developed by <a href="https://alkjtechnologies.com" target="_blank">ALKJ Technologies</a>
   </footer>
 </body>
 </html>
